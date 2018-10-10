@@ -1,5 +1,7 @@
 # UOSerpentIsle Repo
 
+[![Build Status](https://travis-ci.org/highchloride/UOSerpentIsle.svg?branch=master)](https://travis-ci.org/highchloride/UOSerpentIsle)
+
 This is a fork of [ServUO](https://github.com/ServUO/ServUO) for UO Serpent Isle.
 
 ## UO Serpent Isle
