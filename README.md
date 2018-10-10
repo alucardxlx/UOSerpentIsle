@@ -1,12 +1,12 @@
 # UOSerpentIsle Repo
 
-This is a fork of ServUO for UOSerpentIsle.com.
+This is a fork of [ServUO](https://github.com/ServUO/ServUO) for UO Serpent Isle, by highchloride.
 
-# UO Serpent Isle
+## UO Serpent Isle
 
 A freeshard for Ultima Online with a map of the Serpent Isle from Ultima 7 part 2 replacing the Ilshenar facet. More details regarding this project can be found at our website: http://www.uoserpentisle.com
 
-## Changes
+### Changes
 
 There are two folders where the majority of the custom scripts can be found. 
 
