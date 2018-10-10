@@ -1,6 +1,6 @@
 # UOSerpentIsle Repo
 
-This is a fork of [ServUO](https://github.com/ServUO/ServUO) for UO Serpent Isle, by highchloride.
+This is a fork of [ServUO](https://github.com/ServUO/ServUO) for UO Serpent Isle.
 
 ## UO Serpent Isle
 
