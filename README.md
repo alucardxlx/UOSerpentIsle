@@ -2,7 +2,9 @@
 
 [![Build Status](https://travis-ci.org/highchloride/UOSerpentIsle.svg?branch=master)](https://travis-ci.org/highchloride/UOSerpentIsle)
 
-https://img.shields.io/discord/488143790557626378.svg
+
+![](https://img.shields.io/discord/488143790557626378.svg)
+
 
 This is a fork of [ServUO](https://github.com/ServUO/ServUO) for UO Serpent Isle.
 
