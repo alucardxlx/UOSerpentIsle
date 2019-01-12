@@ -140,9 +140,9 @@ namespace Server.Items
 					item.ItemID == 0x2C0A || item.ItemID == 0x2C0B || item.ItemID == 0x2CAC || item.ItemID == 0x2CBD || 
 					item.ItemID == 0x2CAF || item.ItemID == 0x2CB0 || item.ItemID == 0x2CB1 || item.ItemID == 0x2CB2 || 
 					item.ItemID == 0xFFA || item.ItemID == 0xB41 || item.ItemID == 0xB42 || 
-					item.ItemID == 0xB43 || item.ItemID == 0xB44 || item.ItemID == 0xE7B || item.ItemID == 0x154D || 
-					item.ItemID == 3707 || item.ItemID == 5453 || item.ItemID == 2882 || item.ItemID == 2881 || 
-					item.ItemID == 13422 || item.ItemID == 2883 || item.ItemID == 2884 );
+					item.ItemID == 0xB43 || item.ItemID == 0xB44 || item.ItemID == 0xE7B || item.ItemID == 0x154D || item.ItemID == 0x173C ||
+                    item.ItemID == 0x173B || item.ItemID == 0x173A || item.ItemID == 0x1739 || item.ItemID == 0x1738 ); //Removed 3707(Explosion ball), 5453(No item found), 2882-2884(Wooden flooor), 13422(Nothing)
+                //Added 0x173C, B, A 9, 8 to allow for Fountains.
 
 				if ( isWater )
 				{

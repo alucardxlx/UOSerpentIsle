@@ -1,4 +1,4 @@
-﻿/*
+/*
  * 
  * By Gargouille
  * Date: 07/06/2014
@@ -21,7 +21,7 @@ namespace Server.Mobiles
 	public class MineSpirit : EarthElemental
 	{
 		//change it for the base class of ore if custom
-		private static Type m_BaseType = typeof(IronOre);
+		private static Type m_BaseType = typeof(BaseOre); //UOSI Changed from IronOre to BaseOre
 		
 		[Constructable]
 		public MineSpirit( )
@@ -63,7 +63,7 @@ namespace Server.Mobiles
 			get
 			{
 				//can use cliloc cf 1007072 if ores not custom
-				string ore = m_OreType.FullName;//use substring, my customs ore have a getname method
+				string ore = m_OreType.Name;//UOSI: Changed it to just the regular name for now //use substring, my customs ore have a getname method
 				
 				return "You place some "+ore+ " in your backpack";
 			}

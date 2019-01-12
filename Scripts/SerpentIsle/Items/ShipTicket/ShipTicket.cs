@@ -7,9 +7,9 @@ namespace Server.Items
 		[Constructable]
 		public ShipTicket() : base( 0x14F0 )
 		{
-			Name = "Ship Ticket";
+            Name = "Ship Ticket";
 			Hue = 0x492;
-		}
+        }
 
         public ShipTicket(Serial serial)
             : base(serial)

@@ -14,7 +14,7 @@ namespace Felladrin.Automations
         {
             public static bool Enabled = false;                          // Is this system enabled?
             public static bool PlayRandomMusic = false;                  // Should we play a random music from the list?
-            public static MusicName SingleMusic = MusicName.OldUlt01;    // Music to be played if PlayRandomMusic = false.
+            public static MusicName SingleMusic = MusicName.OldUlt03;    // Music to be played if PlayRandomMusic = false.
         }
 
         public static void Initialize()

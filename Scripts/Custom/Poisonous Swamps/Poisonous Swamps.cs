@@ -8,6 +8,7 @@ using Server.Items;
 
 namespace Server.PoisonousSwamps
 {
+    //UOSI: All swamps now cause deadly poison. This...might be overkill.
 	public class EffectLogin
 	{
 		public static void Initialize()
@@ -65,7 +66,7 @@ namespace Server.PoisonousSwamps
                 if (Utility.RandomDouble() < 0.15)
                 {
                     // poison player
-                    from.Poison = Poison.Regular;
+                    from.Poison = Poison.Deadly;
 
                     from.SendMessage("You were poisoned by the swamp!");
 
@@ -77,7 +78,7 @@ namespace Server.PoisonousSwamps
                 if (Utility.RandomDouble() < 0.05)
                 {
                     // poison player
-                    from.Poison = Poison.Lesser;
+                    from.Poison = Poison.Deadly;
 
                     from.SendMessage("You were poisoned by the swamp!");
 
@@ -105,7 +106,7 @@ namespace Server.PoisonousSwamps
                     if (Utility.RandomDouble() < 0.15) // 0.15% chance
                     {
                         // poison player
-                        from.Poison = Poison.Regular;
+                        from.Poison = Poison.Deadly;
 
                         from.SendMessage("You were poisoned by the swamp!");
 
@@ -117,7 +118,7 @@ namespace Server.PoisonousSwamps
                     if (Utility.RandomDouble() < 0.05) // 0.05% chance
                     {
                         // poison player
-                        from.Poison = Poison.Lesser;
+                        from.Poison = Poison.Deadly;
 
                         from.SendMessage("You were poisoned by the swamp!");
 
@@ -141,7 +142,7 @@ namespace Server.PoisonousSwamps
                     if (Utility.RandomDouble() < 0.15) // 0.15% chance
                     {
                         // poison player
-                        from.Poison = Poison.Regular;
+                        from.Poison = Poison.Deadly;
 
                         from.SendMessage("You were poisoned by the swamp!");
 
@@ -153,7 +154,7 @@ namespace Server.PoisonousSwamps
                     if (Utility.RandomDouble() < 0.05) // 0.05% chance
                     {
                         // poison player
-                        from.Poison = Poison.Lesser;
+                        from.Poison = Poison.Deadly;
 
                         from.SendMessage("You were poisoned by the swamp!");
 

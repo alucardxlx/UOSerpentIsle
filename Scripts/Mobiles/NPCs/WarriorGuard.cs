@@ -11,6 +11,7 @@ namespace Server.Mobiles
 		private Timer m_AttackTimer, m_IdleTimer;
 		private Mobile m_Focus;
 
+
 		[Constructable]
 		public WarriorGuard()
 			: this(null)

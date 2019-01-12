@@ -103,7 +103,7 @@ There is no telling when thou wilt return...", (bool)false, (bool)false);
         private void SendToSerpentIsle()
         {
             caller.SendSound(0x5C9);
-            caller.MoveToWorld(new Point3D(270, 1335, 0), Map.SerpentIsle);
+            caller.MoveToWorld(new Point3D(175, 1335, 0), Map.SerpentIsle);
             caller.CantWalk = false;
         }
     }

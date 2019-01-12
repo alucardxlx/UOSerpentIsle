@@ -5210,6 +5210,10 @@ namespace Server.Mobiles
 		{
 			base.GetProperties(list);
 
+            //UOSI: Shows Shard Staff
+            if (AccessLevel > AccessLevel.Player)
+                list.Add(1060847, "{0}\t{1}", "Shard", Enum.GetName(typeof(AccessLevel), AccessLevel));
+
             if (Core.SA)
             {
                 if (m_SubtitleSkillTitle != null)

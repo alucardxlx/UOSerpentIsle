@@ -32,17 +32,17 @@ namespace Server.Misc
 
         private static readonly CityInfo[] StartingCities = new CityInfo[]
         {
-            new CityInfo("New Haven",   "New Haven Bank",   1150168, 3503,  2574,   14),
-            new CityInfo("Yew", "The Empath Abbey", 1075072, 633,   858,    0),
-            new CityInfo("Minoc", "The Barnacle", 1075073, 2476,    413,    15),
-            new CityInfo("Britain", "The Wayfarer's Inn",   1075074, 1602,  1591,   20),
-            new CityInfo("Moonglow",    "The Scholars Inn", 1075075, 4408,  1168,   0),
-            new CityInfo("Trinsic", "The Traveler's Inn",   1075076, 1845,  2745,   0),
-            new CityInfo("Jhelom", "The Mercenary Inn", 1075078, 1374,  3826,   0),
-            new CityInfo("Skara Brae",  "The Falconer's Inn",   1075079, 618,   2234,   0),
-            new CityInfo("Vesper", "The Ironwood Inn",  1075080, 2771,  976,    0),
-            new CityInfo("Royal City", "Royal City Inn", 1150169, 738, 3486, -19, Map.TerMur),
-            new CityInfo("Expedition Launch", "Expedition Hall", 238, 262, 0, Map.Tokuno)
+            //new CityInfo("New Haven",   "New Haven Bank",   1150168, 3503,  2574,   14),
+            //new CityInfo("Yew", "The Empath Abbey", 1075072, 633,   858,    0),
+            //new CityInfo("Minoc", "The Barnacle", 1075073, 2476,    413,    15),
+            //new CityInfo("Britain", "The Wayfarer's Inn",   1075074, 1602,  1591,   20),
+            //new CityInfo("Moonglow",    "The Scholars Inn", 1075075, 4408,  1168,   0),
+            //new CityInfo("Trinsic", "The Traveler's Inn",   1075076, 1845,  2745,   0),
+            //new CityInfo("Jhelom", "The Mercenary Inn", 1075078, 1374,  3826,   0),
+            //new CityInfo("Skara Brae",  "The Falconer's Inn",   1075079, 618,   2234,   0),
+            //new CityInfo("Vesper", "The Ironwood Inn",  1075080, 2771,  976,    0),
+            //new CityInfo("Royal City", "Royal City Inn", 1150169, 738, 3486, -19, Map.TerMur),
+            new CityInfo("Expedition Launch", "Expedition Hall", 1150168, 2765, 970, 0) //UOSI  Gonna try to put this on the britannia map then we'll just move you in CC.cs
         };
 
         private static readonly CityInfo[] SiegeStartingCities = new CityInfo[]
@@ -438,7 +438,7 @@ namespace Server.Misc
                     m.Delete();
 
                     //THIS LINE CALLS FOR A NEW DEFAULT CHARACTER TO BE CREATED AFTER DELETION
-                    Bittiez.DefaultCharacter.Main.EventSink_DeleteRequest(e);
+                    //Bittiez.DefaultCharacter.Main.EventSink_DeleteRequest(e);
 
                     state.Send(new CharacterListUpdate(acct));
                 }

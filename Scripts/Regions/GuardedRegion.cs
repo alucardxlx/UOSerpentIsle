@@ -70,7 +70,11 @@ namespace Server.Regions
 				{
 					return typeof(ArcherGuard);
 				}
-				else
+                else if (Map == Map.SerpentIsle) //UOSI Change - Spawn Pikeman by default
+                {
+                    return typeof(PikemanGuard);
+                }
+                else
 				{
 					return typeof(WarriorGuard);
 				}
@@ -150,8 +154,10 @@ namespace Server.Regions
 				{
 					Activator.CreateInstance(m_GuardType, m_GuardParams);
 				}
-				catch
-				{ }
+				catch(Exception ex)
+				{
+                    Console.WriteLine("Failed to create guard: " + ex.Message);
+                }
 			}
 			else
 			{

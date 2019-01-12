@@ -160,7 +160,7 @@ namespace Server.Misc
             */
 
             for (int i = 0; i < 15; ++i)
-                AddDynamicWeather(+15, 100, 5, 8, 400, 400, new Rectangle2D(0, 0, 5120, 4096));
+                AddDynamicWeather(+15, 100, 5, 8, 400, 400, new Rectangle2D(0, 0, 1412, 1600));
         }
 
         public static List<Weather> GetWeatherList(Map facet)

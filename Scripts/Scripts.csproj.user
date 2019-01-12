@@ -5,4 +5,7 @@
     <StartProgram>F:\Ultima Online\SERVERS\ServUO-master\ServUO.exe</StartProgram>
     <StartArguments>-debug</StartArguments>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
 </Project>

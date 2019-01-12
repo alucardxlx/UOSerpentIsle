@@ -189,16 +189,20 @@ namespace Server.Misc
 			newChar.Player = true;
 			newChar.AccessLevel = args.Account.AccessLevel;
 			newChar.Female = args.Female;
-			//newChar.Body = newChar.Female ? 0x191 : 0x190;
+            //newChar.Body = newChar.Female ? 0x191 : 0x190;
 
-			if (Core.Expansion >= args.Race.RequiredExpansion)
-				newChar.Race = args.Race; //Sets body
-			else
-				newChar.Race = Race.DefaultRace;
+            //UOSI: Trying to disable races, but no matter what you pick you're getting a human
+            //if (Core.Expansion >= args.Race.RequiredExpansion)
+            //	newChar.Race = args.Race; //Sets body
+            //else
+            //	newChar.Race = Race.DefaultRace;
 
-			newChar.Hue = args.Hue | 0x8000;
+            newChar.Race = Race.DefaultRace; //UOSI see above
+
+            newChar.Hue = args.Hue | 0x8000;
 
 			newChar.Hunger = 20;
+            newChar.Thirst = 20; //UOSI added for the hunger/thirst system
 
 			var young = false;
 
@@ -276,17 +280,27 @@ namespace Server.Misc
 				newChar.BankBox.DropItem(ticket);
 			}
 
-			var city = args.City;
+            //UOSI Added starting items
+            newChar.AddToBackpack(new Waterskin());
+
+
+            //UOSI Override the starting city
+            var tCity = new CityInfo("", "", 236, 265, 0, Map.Tokuno);
+
+            var city = args.City;
 			var map = Siege.SiegeShard && city.Map == Map.Trammel ? Map.Felucca : city.Map;
 
-			newChar.MoveToWorld(city.Location, map);
+            //UOSI Override the starting city
+            //newChar.MoveToWorld(city.Location, map);
+            newChar.MoveToWorld(tCity.Location, Map.Tokuno);
+            newChar.Direction = Direction.South;
 
 			Utility.PushColor(ConsoleColor.Green);
 			Console.WriteLine("Login: {0}: New character being created (account={1})", state, args.Account.Username);
 			Utility.PopColor();
 			Utility.PushColor(ConsoleColor.DarkGreen);
 			Console.WriteLine(" - Character: {0} (serial={1})", newChar.Name, newChar.Serial);
-			Console.WriteLine(" - Started: {0} {1} in {2}", city.City, city.Location, city.Map);
+			Console.WriteLine(" - Started: {0} {1} in {2}", tCity.City, tCity.Location, tCity.Map); //UOSI 
 			Utility.PopColor();
 
 			new WelcomeTimer(newChar).Start();
