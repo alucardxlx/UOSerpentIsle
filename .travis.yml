@@ -1,2 +1,6 @@
 language: csharp
+<<<<<<< HEAD
 solution: ServUO.sln
+=======
+solution: ServUO.sln
+>>>>>>> 62121b2a5d0ef29d0008e41fab218f5f6c628f22
